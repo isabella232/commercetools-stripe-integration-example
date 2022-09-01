@@ -1,0 +1,17 @@
+
+version: "3.7"
+
+services:
+  commercetools-stripe-notification-module:
+    build:
+      context: .
+      args:
+        - CLOUD_USERNAME=${CLOUD_USERNAME}
+        - CLOUD_PASSWORD=${CLOUD_PASSWORD}
+        - NPM_EMAIL=${NPM_EMAIL}
+    restart: always
+    environment:
+      - 'STRIPE_INTEGRATION_CONFIG=${STRIPE_INTEGRATION_CONFIG}'
+      - PORT=${PORT}
+    ports:
+      - ${PORT}:${PORT}

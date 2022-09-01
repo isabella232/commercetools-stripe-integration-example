@@ -1,0 +1,21 @@
+{
+  "private": true,
+  "name": "example-commercetools-stripe-integration-notification-module",
+  "version": "1.0.0",
+  "description": "Example setup of commercetools-stripe-integration's notification module",
+  "main": "src/dist/index.js",
+  "scripts": {
+    "build": "npx tsc",
+    "start": "node src/dist/index.js",
+    "dev": "concurrently \"npx tsc --watch\" \"nodemon -q src/dist/index.js\""
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@vsf-enterprise/commercetools-stripe-integration-notification": "0.0.1"
+  },
+  "devDependencies": {
+    "concurrently": "^7.3.0",
+    "nodemon": "^2.0.19",
+    "typescript": "^4.8.2"
+  }
+}
