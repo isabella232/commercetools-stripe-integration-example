@@ -11,7 +11,7 @@
   },
   "license": "MIT",
   "dependencies": {
-    "@vsf-enterprise/commercetools-stripe-integration-extension": "0.0.1"
+    "@vsf-enterprise/commercetools-stripe-integration-extension": "1.0.0"
   },
   "devDependencies": {
     "concurrently": "^7.3.0",
